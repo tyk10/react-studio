@@ -1,9 +1,42 @@
 /* Add styling for your page here */
 
-.App {
-
+.App > .container {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
 }
 
-.BakeryItem {
-  
+#cart-wrapper {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+#my-cart-title {
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+#my-cart-total {
+    bottom: 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 991px) {
+    .App > .container {
+        flex-direction: column;
+    }
+
+    #cart {
+        order: 1;
+        width: 100%;
+    }
+
+    #item-list {
+        order: 2;
+        width: 100%;
+    }
 }
