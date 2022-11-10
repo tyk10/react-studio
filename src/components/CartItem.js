@@ -9,7 +9,7 @@ export default function CartItem(props) {
     >
       <div className="ms-2 me-auto">
         <div className="fw-bold">{props.item}</div>
-        {'$' + props.price * props.number}
+        {'$' + Math.round(props.price * props.number * 100) / 100}
       </div>
       <Badge bg="primary" pill>
         {props.number}
